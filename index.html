@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="product-img">
+        <img src="./assets/product-img.jpeg" alt="img" />
+        <div class="thumbails">
+          <div class="img img-1 selected">
+            <img src="./assets/product-img.jpeg" alt="img" />
+          </div>
+          <div class="img img-2">
+            <img src="./assets/thumbnail-1.jpeg" alt="img" />
+          </div>
+          <div class="img img-3">
+            <img src="./assets/thumbnail-2.jpeg" alt="img" />
+          </div>
+          <div class="img img-4">
+            <img src="./assets/thumbnail-3.jpeg" alt="img" />
+          </div>
+          <div class="img img-4"></div>
+        </div>
+      </div>
+      <ul class="product-details">
+        <li>
+          <span class="product-ventor"></span>
+          <h2 class="product-title">Embrace Sideboard</h2>
+        </li>
+
+        <li>
+          <div>
+            <span class="price">$129999.00</span>
+            <span class="percentage-off">35% Off</span>
+          </div>
+          <p class="compared-price">$19999.00</p>
+        </li>
+        <li class="color-selector">
+          <p>Choose a Color</p>
+          <div>
+            <label class="color yellow">
+              <input type="checkbox" name="Yellow" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="color green">
+              <input type="checkbox" name="Green" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="color blue">
+              <input type="checkbox" name="Blue" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="color pink">
+              <input type="checkbox" name="Pink" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </li>
+        <li class="product-size">
+          <p>Choose a Size</p>
+          <div class="size">
+            <label>
+              <span>Small</span>
+              <input
+                type="radio"
+                name="size"
+                value="Small"
+                id="small"
+                checked
+              />
+            </label>
+            <label>
+              <span>Medium</span>
+              <input type="radio" name="size" value="Medium" id="medium" />
+            </label>
+            <label>
+              <span>Large</span>
+              <input type="radio" name="size" value="Large" id="large" />
+            </label>
+            <label>
+              <span>Extra</span>
+              <input type="radio" name="size" value="Extra" id="extra" />
+            </label>
+            <label>
+              <span>XXL</span>
+              <input type="radio" name="size" value="XXL" id="xxl" />
+            </label>
+          </div>
+
+          <div class="buttons">
+            <div class="quantity-selector">
+              <button class="decrease-item">-</button>
+              <span class="items">1</span>
+              <button class="increase-item">+</button>
+            </div>
+            <button class="add-to-card-btn">
+              <img src="./assets/Vector.svg" alt="" />
+              <span>Add To Cart</span>
+            </button>
+          </div>
+          <div class="message">
+            Embrace Sideboard with Color Yellow and Size Small added to cart
+          </div>
+        </li>
+        <li class="description">
+          <!-- <p>
+            The Embrace Sideboard is a stylish wear. With a top cloth designed
+            to provide superior protection and look great, this storage solution
+            is both functional and attractive. It fits seamlessly into any home
+            decor, with clean lines and a timeless look. Crafted from premium
+            materials for a combination of style, durability, and reliability.
+          </p> -->
+        </li>
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

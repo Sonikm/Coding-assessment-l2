@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  justify-items: baseline;
+  /* gap: 30px; */
+}
+
+.product-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  gap: 15px;
+}
+
+.product-img > img {
+  height: 450px;
+  width: 340px;
+}
+
+.product-img .thumbails {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+.thumbails .img {
+  width: 70px;
+  height: 75px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.product-img .thumbails img {
+  width: 70px;
+  /* height: 80px; */
+}
+
+ .thumbails .img {
+  height: 80px;
+}
+
+.thumbails .img.selected {
+  border: 2px solid #3a4980;
+
+}
+
+
+ul li {
+  border-bottom: 1.8px #eaeaec solid;
+  padding-block: 10px;
+}
+
+.product-ventor {
+  color: #b9bbbf;
+}
+
+.product-title {
+  font-size: 20px;
+}
+
+.price {
+  color: #3a4980;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.compared-price {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: #000;
+  opacity: 50%;
+  text-decoration-color: #000;
+}
+
+.percentage-off {
+  color: #ff0000;
+  font-size: 21px;
+}
+
+.color-selector div {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  padding-inline: 10px;
+}
+
+.color-selector .color {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(121, 164, 2);
+}
+
+.color-selector p {
+  color: #b9bbbf;
+  margin-block: 10px 15px;
+  font-size: 16px;
+}
+
+.color-selector .yellow {
+  background-color: #ecdecc;
+}
+
+.color-selector .green {
+  background-color: #bbd278;
+}
+
+.color-selector .blue {
+  background-color: #bbc1f8;
+}
+
+.color-selector .pink {
+  background-color: #ffd3f8;
+}
+
+/* The container */
+.color {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.color input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+}
+
+/* On mouse-over, add a grey background color */
+.color:hover input ~ .checkmark {
+  background-color: #ecdecc;
+}
+
+.yellow:hover input ~ .checkmark {
+  background-color: #ecdecc;
+}
+
+.green:hover input ~ .checkmark {
+  background-color: #bbd278;
+}
+
+.pink:hover input ~ .checkmark {
+  background-color: #ffd3f8;
+}
+
+.blue:hover input ~ .checkmark {
+  background-color: #bbc1f8;
+}
+
+/* When the checkbox is checked, add a blue background */
+.color input:checked ~ .checkmark {
+  background-color: #ecdecc;
+  outline: 3px solid #ecdecc;
+  outline-offset: 5px;
+}
+.yellow input:checked ~ .checkmark {
+  background-color: #ecdecc;
+  outline: 3px solid #ecdecc;
+}
+.green input:checked ~ .checkmark {
+  background-color: #bbd278;
+  outline: 3px solid #bbd278;
+}
+.blue input:checked ~ .checkmark {
+  background-color: #bbc1f8;
+  outline: 3px solid #bbc1f8;
+}
+.pink input:checked ~ .checkmark {
+  background-color: #ffd3f8;
+  outline: 3px solid #ffd3f8;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.color input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.color .checkmark:after {
+  left: 15px;
+  top: 8px;
+  width: 8px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.product-size p {
+  font-size: 16px;
+  color: #b9bbbf;
+}
+
+.product-size .size {
+  display: flex;
+  gap: 10px;
+}
+
+.size label {
+  background-color: #edf0f8;
+  display: flex;
+  justify-items: center;
+  gap: 4px;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-size {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="radio"] {
+  accent-color: #3a4980;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.add-to-card-btn {
+  background-color: #3a4980;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+
+.add-to-card-btn img {
+  width: 14px;
+}
+
+.add-to-card-btn span {
+  font-size: 12px;
+}
+
+.quantity-selector {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 20px;
+  gap: 20px;
+  color: #3a4980;
+  font-weight: bold;
+}
+
+.message {
+  font-size: 12px;
+  background-color: #e7f8b7;
+  padding: 6px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: ease-out;
+  transition-duration: 1s;
+}
+
+.description {
+  max-width: 450px;
+  font-size: 14px;
+  color: #a3a3a3;
+  border-bottom: none;
+  margin-top: 15px;
+}
+
+.description p {
+  font-size: 14px;
+}
+
+ /* || RESPONSIVENESS */
+ @media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    margin-inline: 40px;
+  }
+
+  .product-img img {
+    width: 100%;
+  }
+ }
